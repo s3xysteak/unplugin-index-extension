@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.0",
   "private": false,
-  "description": "Improving the handling of static resources in Vite through replacing target string directly.",
+  "description": "Auto import './package/index.vue' by './package', just like './package/index.js'",
   "author": "s3xysteak",
   "license": "MIT",
   "homepage": "https://github.com/s3xysteak/unplugin-index-extension",
