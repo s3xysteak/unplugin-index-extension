@@ -1,7 +1,7 @@
 {
   "name": "unplugin-index-extension",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": false,
   "description": "Auto import './package/index.vue' by './package', just like './package/index.js'",
   "author": "s3xysteak",
@@ -84,7 +84,6 @@
     "dev:dev": "cd ./example && pnpm dev",
     "dev:build": "cd ./example && pnpm build",
     "dev:preview": "cd ./example && pnpm preview",
-
     "build": "tsc && unbuild",
     "build-only": "unbuild",
     "test": "vitest",
