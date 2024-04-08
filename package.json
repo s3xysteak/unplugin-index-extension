@@ -1,0 +1,109 @@
+{
+  "name": "unplugin-index-extension",
+  "type": "module",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Improving the handling of static resources in Vite through replacing target string directly.",
+  "author": "s3xysteak",
+  "license": "MIT",
+  "homepage": "https://github.com/s3xysteak/unplugin-index-extension",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/s3xysteak/unplugin-index-extension.git"
+  },
+  "bugs": "https://github.com/s3xysteak/unplugin-index-extension/issues",
+  "keywords": [
+    "unplugin",
+    "plugin",
+    "esm"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./vite": {
+      "import": {
+        "types": "./dist/vite.d.mts",
+        "default": "./dist/vite.mjs"
+      },
+      "require": {
+        "types": "./dist/vite.d.cts",
+        "default": "./dist/vite.cjs"
+      }
+    },
+    "./rollup": {
+      "import": {
+        "types": "./dist/rollup.d.mts",
+        "default": "./dist/rollup.mjs"
+      },
+      "require": {
+        "types": "./dist/rollup.d.cts",
+        "default": "./dist/rollup.cjs"
+      }
+    },
+    "./esbuild": {
+      "import": {
+        "types": "./dist/esbuild.d.mts",
+        "default": "./dist/esbuild.mjs"
+      },
+      "require": {
+        "types": "./dist/esbuild.d.cts",
+        "default": "./dist/esbuild.cjs"
+      }
+    },
+    "./webpack": {
+      "import": {
+        "types": "./dist/webpack.d.mts",
+        "default": "./dist/webpack.mjs"
+      },
+      "require": {
+        "types": "./dist/webpack.d.cts",
+        "default": "./dist/webpack.cjs"
+      }
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "dev": "unbuild && cd ./example && pnpm i && pnpm dev",
+    "preview": "unbuild && cd ./example && pnpm i && pnpm build && pnpm preview",
+    "dev:dev": "cd ./example && pnpm dev",
+    "dev:build": "cd ./example && pnpm build",
+    "dev:preview": "cd ./example && pnpm preview",
+
+    "build": "tsc && unbuild",
+    "build-only": "unbuild",
+    "test": "vitest",
+    "test-once": "vitest run",
+    "release": "esno ./scripts/release.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "pathe": "^1.1.2",
+    "unplugin": "^1.10.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.12.2",
+    "@types/node": "^20.12.5",
+    "eslint": "^8.57.0",
+    "esno": "^4.7.0",
+    "typescript": "^5.4.4",
+    "unbuild": "^2.0.0",
+    "vitest": "^1.4.0"
+  }
+}
