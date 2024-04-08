@@ -44,7 +44,7 @@ export default defineConfig({
 
 Also support `esbuild, rollup, webpack`, install in the same way.
 
-> First check `.vue`, then check `.svelte`, and finally proceed with the default behavior.
+> The plugin check `.vue` first, then check `.svelte`, and finally proceed with the default behavior.
 
 ## License
 

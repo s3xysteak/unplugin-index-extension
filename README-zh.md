@@ -41,7 +41,7 @@ export default defineConfig({
 
 同样支持 `esbuild, rollup, webpack`， 通过相同方法安装。
 
-> 首先检查`.vue`，其次检查`.svelte`，之后进行默认行为。
+> 插件首先检查`.vue`，其次检查`.svelte`，之后进行默认行为。
 
 ## License
 
