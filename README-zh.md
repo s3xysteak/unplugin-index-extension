@@ -6,10 +6,11 @@
 
 ```diff
 + import JsChild from './Component'
++ import JsChildNoExt from './Component/index'
 + import JSChildDirectly from './Component/index.js'
 
 - import VueChild from './Component'
-- import SvelteChild from './Component'
+- import SvelteChild from './Component/index'
 ```
 
 这个插件赐予更多后缀名这样的能力！

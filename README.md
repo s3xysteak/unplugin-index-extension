@@ -6,10 +6,11 @@ Have you ever been troubled by：
 
 ```diff
 + import JsChild from './Component'
++ import JsChildNoExt from './Component/index'
 + import JSChildDirectly from './Component/index.js'
 
 - import VueChild from './Component'
-- import SvelteChild from './Component'
+- import SvelteChild from './Component/index'
 ```
 
 This plugin grants the ability to support more file extensions！
