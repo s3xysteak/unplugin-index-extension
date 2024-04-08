@@ -17,6 +17,12 @@ This plugin grants the ability to support more file extensions！
 
 ## :memo: Install
 
+Taking pnpm as an example:
+
+```sh
+$ pnpm i -D unplugin-index-extension
+```
+
 For Vite:
 
 ```js

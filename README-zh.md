@@ -17,6 +17,12 @@
 
 ## :memo: 安装
 
+以pnpm为例:
+
+```sh
+$ pnpm i -D unplugin-index-extension
+```
+
 以Vite为例:
 
 ```js
